@@ -21,7 +21,7 @@ public class AtualizaRoteirosController {
 
     @PostMapping("/exportados")
     public ResponseEntity<?> atualizaExportados(@RequestBody List<BigInteger> roteirosIds) throws Exception {
-        String response = service.updateIntegradoOic(roteirosIds);
+        String response = service.updateExportados(roteirosIds);
         return ResponseEntity.ok(response);
     }
 

@@ -32,7 +32,7 @@ public class AtualizaRoteirosService {
         }
     }
 
-    public String updateIntegradoOic(List<BigInteger> ids) throws Exception {
+    public String updateExportados(List<BigInteger> ids) throws Exception {
 		StringBuilder retorno = new StringBuilder();
         try {
 			repository.updateExportados(ids);
